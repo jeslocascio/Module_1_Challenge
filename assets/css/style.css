@@ -1,13 +1,17 @@
+/* This sets the website to the size of the window, without any additonal spacing.*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* This sets the background color of the webpage.*/
 body {
     background-color: #d9dcd6;
 }
 
+/* This sets the background color, size, and positioning of any items inside the Header class at the top of the webpage.
+Additionally, it also provides alternative fonts for the text in the header, just in case the original font isn't available.  */
 .header {
     padding: .5em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,6 +29,8 @@ body {
     flex: 1 1 300px;
 }
 
+/* This sets the amount of empty space around the entire list element.
+ Since we want the list element to act as a navigation bar, this removes any styling from the list, and spaces out each individual item. */
 nav ul {
     padding-top: 20px;
     margin-right: 20px;
@@ -35,20 +41,25 @@ nav ul {
     font-size: 24px;
 } 
 
+/* This sets the positioning of each element within the navigation bar, and creates a 25 pixel buffer each the left side of each element.
+This makes it so that the elements of the navigation bar aren't too close together.*/
 nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/*This sets the font color of any hyperlinks on the page, and ensures they appear as basic text.*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* This sets the size of any text in paragraph elements to 16 pixels.*/
 p {
     font-size: 16px;
 }
 
+/* This sets the size and position parameters for the background image located within the Hero id.*/
 #hero {
     height: 100%;
     width: 100%;
@@ -57,22 +68,26 @@ p {
     object-position: center;
 }
 
+/* This class only affects the images on the left side of the Content article. It ensures the image has a 25 pixel buffer from the text on its right.*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* This class only affects the images on the right side of the Content article. It ensures the image has a 25 pixel buffer from the text on its left.*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* This sets the content article to only covers 75% of the screen. it also creates a 20 pixels buffer from the left side of the screen.*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* This class affects each section within the content article. It sets parameters for the text within each element, and creates space around each element.*/
 .sos-content {
     margin-bottom: 20px;
     padding: 50px;
@@ -82,15 +97,19 @@ p {
     color: #ffffff;
 }
 
+/* The sets the maximum size for all images within "sos-content" class sections.*/
 .sos-content img {
     max-height: 200px;
 }
 
+/* The sets the titles of each section within the "sos-content" class to be 36 pixels, and be separated from the main paragraph by 20 pixels.*/
 .sos-content h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/* This sets set Benefits aside to take up 20% of the right side of the screen. 
+It also creates a 20 pixel buffer around the element, as well as set the font family within the class. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -102,22 +121,27 @@ p {
     background-color: #2589bd;
 }
 
+/* This sets the color of the text within each "benefit-points" section, as well as adding a 32 pixel buffer underneath each element.*/
 .benefit-points {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/* This makes it so any titles within the Benefit class are centered, and float 10 pixels about the element below it.*/
 .benefit-points h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* This sets the positioning of each image within the Benefit class, as well as setting their maximum width.*/
 .benefit-points img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/* The sets the text positioning of the footer element, as well as separating it from the rest of the page by 30 pixels.
+Additionally, it also provides the font family for the text elements within.*/
 .footer {
     padding: 30px;
     clear: both;
@@ -125,6 +149,7 @@ p {
     text-align: center;
 }
 
+/* This sets the title of the footer element to 20 pixels, so that it is still easy to read.*/
 .footer h4 {
     font-size: 20px;
 }
